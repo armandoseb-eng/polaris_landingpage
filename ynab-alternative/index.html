@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Polaris — A Private YNAB Alternative</title>
+
+  <meta name="description" content="Looking for a private YNAB alternative? Polaris is a personal finance dashboard and budget tracker for income, expenses, savings, investments, debts, net worth, and habits.">
+
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://armandoseb-eng.github.io/polaris_landingpage/ynab-alternative/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Polaris — A Private YNAB Alternative">
+  <meta property="og:description" content="A private personal finance dashboard for people who want clarity without complexity.">
+  <meta property="og:url" content="https://armandoseb-eng.github.io/polaris_landingpage/ynab-alternative/">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Polaris — A Private YNAB Alternative">
+  <meta name="twitter:description" content="Track your money, habits, net worth, and financial independence progress with Polaris.">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f8f4ee;
+      color: #1a1612;
+      line-height: 1.6;
+    }
+
+    .wrap {
+      width: min(92%, 980px);
+      margin: 0 auto;
+      padding: 56px 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 72px;
+    }
+
+    .brand {
+      font-weight: 900;
+      font-size: 22px;
+      letter-spacing: -0.04em;
+      color: #1a1612;
+      text-decoration: none;
+    }
+
+    .nav-link {
+      color: #6b5e4e;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .hero {
+      text-align: center;
+      max-width: 820px;
+      margin: 0 auto 80px;
+    }
+
+    .kicker {
+      display: inline-block;
+      color: #b8860b;
+      background: rgba(184,134,11,.10);
+      border: 1px solid rgba(184,134,11,.25);
+      padding: 8px 16px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      font-size: clamp(40px, 7vw, 76px);
+      line-height: 0.98;
+      letter-spacing: -0.06em;
+      margin: 0 0 24px;
+    }
+
+    .sub {
+      font-size: 19px;
+      color: #6b5e4e;
+      max-width: 680px;
+      margin: 0 auto 32px;
+    }
+
+    .actions {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px 28px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 800;
+    }
+
+    .btn-primary {
+      background: #1a1612;
+      color: #f8f4ee;
+    }
+
+    .btn-secondary {
+      background: #fffaf1;
+      color: #1a1612;
+      border: 1px solid rgba(184,134,11,.22);
+    }
+
+    section {
+      background: #fffaf1;
+      border: 1px solid rgba(184,134,11,.18);
+      border-radius: 24px;
+      padding: 36px;
+      margin-bottom: 28px;
+      box-shadow: 0 18px 50px rgba(26,22,18,.06);
+    }
+
+    h2 {
+      font-size: clamp(28px, 4vw, 42px);
+      line-height: 1.08;
+      letter-spacing: -0.045em;
+      margin: 0 0 16px;
+    }
+
+    p {
+      color: #6b5e4e;
+      font-size: 16px;
+      margin: 0 0 16px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 26px;
+    }
+
+    .card {
+      background: #f8f4ee;
+      border: 1px solid rgba(184,134,11,.16);
+      border-radius: 18px;
+      padding: 20px;
+    }
+
+    .card strong {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 17px;
+    }
+
+    .card span {
+      color: #6b5e4e;
+      font-size: 14px;
+    }
+
+    ul {
+      padding-left: 20px;
+      color: #6b5e4e;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .cta {
+      text-align: center;
+      background: #1a1612;
+      color: #f8f4ee;
+    }
+
+    .cta p {
+      color: rgba(248,244,238,.72);
+    }
+
+    .cta .btn-primary {
+      background: #b8860b;
+      color: #1a1612;
+    }
+
+    footer {
+      text-align: center;
+      color: #9e8e7a;
+      font-size: 13px;
+      padding: 32px 0 0;
+    }
+
+    @media (max-width: 760px) {
+      .wrap {
+        width: min(92%, 680px);
+        padding: 28px 0;
+      }
+
+      nav {
+        margin-bottom: 48px;
+      }
+
+      .hero {
+        margin-bottom: 52px;
+      }
+
+      section {
+        padding: 24px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .actions {
+        flex-direction: column;
+      }
+
+      .btn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <nav>
+      <a class="brand" href="../">Polaris</a>
+      <a class="nav-link" href="../">Back to home</a>
+    </nav>
+
+    <main>
+      <div class="hero">
+        <div class="kicker">YNAB alternative</div>
+
+        <h1>A private YNAB alternative for personal finance clarity.</h1>
+
+        <p class="sub">
+          Polaris is a personal finance dashboard for people who want to track income, expenses, savings, investments, debts, net worth, and financial habits in one clear place.
+        </p>
+
+        <div class="actions">
+          <a class="btn btn-primary" href="../#pricing">Get Polaris</a>
+          <a class="btn btn-secondary" href="../">See the full dashboard</a>
+        </div>
+      </div>
+
+      <section>
+        <h2>Why people look for a YNAB alternative</h2>
+        <p>
+          Budgeting tools can be powerful, but not everyone wants a complex system, bank syncing, or another monthly subscription. Some people simply want a private dashboard that helps them see the full picture of their money.
+        </p>
+        <p>
+          Polaris was built for that: a calm, visual, one-place view of your financial life.
+        </p>
+      </section>
+
+      <section>
+        <h2>What Polaris helps you track</h2>
+
+        <div class="grid">
+          <div class="card">
+            <strong>Budget and expenses</strong>
+            <span>Track income, spending, categories, and available money clearly.</span>
+          </div>
+
+          <div class="card">
+            <strong>Savings and debts</strong>
+            <span>Follow your progress across savings goals, debts, and monthly movement.</span>
+          </div>
+
+          <div class="card">
+            <strong>Net worth and habits</strong>
+            <span>Connect your money numbers with behavior, habits, and financial direction.</span>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Polaris is different because it focuses on the whole picture</h2>
+
+        <ul>
+          <li>Income, expenses, savings, investments, debts, and net worth in one dashboard.</li>
+          <li>No bank connection required.</li>
+          <li>Designed for clarity, reflection, and better financial habits.</li>
+          <li>Includes Polaris Unlock to connect dividends and passive income with real-life expenses.</li>
+          <li>Built for people who want control without overcomplication.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Who Polaris is for</h2>
+        <p>
+          Polaris is for people who already care about their money but feel scattered across spreadsheets, apps, notes, and mental calculations.
+        </p>
+        <p>
+          It is especially useful if you want to understand your monthly money flow, track your net worth, build better habits, and move toward financial independence.
+        </p>
+      </section>
+
+      <section class="cta">
+        <h2>Find your financial north.</h2>
+        <p>
+          Use Polaris to turn your financial data into a clear personal dashboard.
+        </p>
+        <div class="actions">
+          <a class="btn btn-primary" href="../#pricing">Get Polaris</a>
+          <a class="btn btn-secondary" href="../">Back to home</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      Polaris is an independent product and is not affiliated with YNAB.
+    </footer>
+  </div>
+</body>
+</html>
